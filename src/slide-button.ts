@@ -1,5 +1,5 @@
 import { LitElement, html, css } from "lit";
-import { customElement, property, queryAssignedElements } from "lit/decorators.js";
+import { customElement } from "lit/decorators.js";
 
 @customElement('slide-button')
 export class SlideButton extends LitElement{
