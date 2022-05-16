@@ -2,15 +2,18 @@
   "name": "lit-components",
   "private": true,
   "version": "0.0.0",
-  "main": "dist/*.js",
-  "exports": {
-    ".": "./dist/*.js"
-  },
-  "types": "types/*.ts",
+  "main": "dist/lit-components-library.ssr.js",
+  "browser": "dist/lit-components-library.esm.js",
+  "module": "dist/lit-components-library.esm.js",
+  "unpkg": "dist/lit-components-library.min.js",
   "files": [
-    "*.js",
+    "dist/*",
     "types"
   ],
+  "exports": {
+    ".": "./dist/my-element.js"
+  },
+  "types": "types/my-element.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
